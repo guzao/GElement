@@ -12,6 +12,7 @@ export interface ButtonProps {
   size?: ButtonSize;
   plain?: boolean;
   round?: boolean;
+  text?: boolean;
   circle?: boolean;
   disabled?: boolean;
   autofocus?: boolean;
@@ -22,3 +23,7 @@ export interface ButtonProps {
   useThrottle?: boolean;
   throttleDuration?: number;
 }
+
+export interface ButtonEmtis {
+  (event: 'click', value: MouseEvent): void
+} 
