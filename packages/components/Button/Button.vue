@@ -18,11 +18,14 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 })
 
 const buttonClass = computed(() => {
-  const { plain, round, circle, type, size } = props
+  const { plain, round, circle, type, size, disabled, loading, text } = props
   return {
+    'is-text': text,
     'is-plain': plain,
     'is-round': round,
     'is-circle': circle,
+    'is-loading': loading,
+    'is-disabled': disabled,
     [`gz-button--${type}`]: type,
     [`gz-button--${size}`]: size,
   }

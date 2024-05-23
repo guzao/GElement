@@ -8,11 +8,11 @@ const btnClick = (e: MouseEvent) => {
 
 
   <gz-button @click="btnClick"> Default </gz-button>
-  <gz-button type="primary"> Primary </gz-button>
+  <gz-button text type="primary"> Primary </gz-button>
   <gz-button type="success"> success </gz-button>
   <gz-button type="warning"> warning </gz-button>
   <gz-button type="info"> info </gz-button>
-  <gz-button type="danger"> danger </gz-button>
+  <gz-button :disabled="true" type="danger"> danger </gz-button>
   <div style="margin-bottom: 10px"> </div>
 
   <gz-button plain> Default </gz-button>

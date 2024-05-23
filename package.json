@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "pnpm --filter @guzao-ui/play dev",
     "docs:dev": "pnpm --filter @guzao-ui/docs dev",
-    "docs:build": "pnpm --filter @guzao-ui/docs dev"
+    "docs:build": "pnpm --filter @guzao-ui/docs dev",
+    "test": "pnpm --filter @guzao-ui/components test"
   },
   "keywords": [],
   "author": "",
