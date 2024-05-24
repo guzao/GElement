@@ -1,4 +1,4 @@
-import type { Component } from "vue"
+import type { Component, Ref } from "vue"
 
 export type NativeType = "button" | "submit" | "reset"
 
@@ -27,3 +27,7 @@ export interface ButtonProps {
 export interface ButtonEmtis {
   (event: 'click', value: MouseEvent): void
 } 
+
+export interface ButtonInstance {
+  ref: Ref<HTMLButtonElement | void>
+}

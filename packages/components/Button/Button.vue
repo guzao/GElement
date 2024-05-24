@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 import { throttle } from 'lodash-es'
-import type { ButtonProps, ButtonEmtis } from './type'
+import type { ButtonProps, ButtonEmtis, ButtonInstance } from './type'
 
 /** 组件名称 */
 defineOptions({
@@ -35,7 +35,9 @@ const emits = defineEmits<ButtonEmtis>()
 const handleButtonClick = (e: MouseEvent) => emits('click', e)
 const handleButtonThrottleClick = throttle(handleButtonClick, props.throttleDuration)
 
-
+defineExpose<ButtonInstance>({
+  ref: _ref
+})
 
 </script>
 

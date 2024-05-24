@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import type { IconProps } from './type'
+
 defineOptions({
-  name: 'GzIcon'
+  name: 'GzIcon',
+  inheritAttrs: false
 })
 
 const props = withDefaults(defineProps<IconProps>(), {
@@ -11,5 +13,7 @@ const props = withDefaults(defineProps<IconProps>(), {
 </script>
 
 <template>
+  <i>
 
+  </i>
 </template>
